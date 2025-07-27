@@ -39,7 +39,7 @@ function MobileNav({ activeNav }: { activeNav?: string }) {
   return (
     <div className="p-[20px]">
       <div className="flex justify-between items-center w-[100%]">
-        <p className="text-[1.25rem] font-[700]">Ebuka</p>
+        <p className="text-[2rem] font-[700]">Ebuka Songs</p>
 
         <CiMenuFries
           onClick={() => setShowMobileMenu(!showMobileMenu)}
