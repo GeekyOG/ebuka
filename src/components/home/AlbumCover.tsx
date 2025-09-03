@@ -15,6 +15,7 @@ function AlbumCover() {
   });
 
   const [tracks, setTracks] = useState<any[]>([]);
+  const [albumTracks, setAlbumTacks] = useState<any[]>([]);
   const [albumInfo, setAlbumInfo] = useState<any>(null);
   const [error, setError] = useState<string>("");
   const [token, setToken] = useState("");
@@ -55,8 +56,11 @@ function AlbumCover() {
           }
         );
 
+        console.log(albumResponse.data);
+
         setAlbumInfo(albumResponse.data);
-        setTracks(albumResponse.data.tracks.items);
+
+        setAlbumTacks(albumResponse.data.tracks);
       } catch (err) {
         setError("Failed to load data from Spotify");
         console.error(err);
@@ -65,6 +69,46 @@ function AlbumCover() {
 
     fetchSpotifyData();
   }, [clientId, clientSecret, albumId]);
+
+  useEffect(() => {
+    const fetchSpotifyData = async () => {
+      try {
+        // Get access token
+        const tokenResponse = await axios.post(
+          "https://accounts.spotify.com/api/token",
+          new URLSearchParams({
+            grant_type: "client_credentials",
+          }),
+          {
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+              Authorization: "Basic " + btoa(clientId + ":" + clientSecret),
+            },
+          }
+        );
+
+        const accessToken = tokenResponse.data.access_token;
+        setToken(accessToken);
+
+        // Fetch album tracks using the token
+        const albumResponse = await axios.get(
+          `https://api.spotify.com/v1/artists/1voWj2pMS3ApzUroyIcHXM/top-tracks`,
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          }
+        );
+
+        setTracks(albumResponse.data.tracks);
+      } catch (err) {
+        setError("Failed to load data from Spotify");
+        console.error(err);
+      }
+    };
+
+    fetchSpotifyData();
+  }, [clientId, clientSecret]);
 
   if (error) {
     return <div>{error}</div>;
@@ -88,7 +132,9 @@ function AlbumCover() {
 
                 <button className="btnGradient text-[#fff] w-[100%] max-w-[200px]">
                   <Link
-                    to={albumInfo.external_urls.spotify}
+                    to={
+                      "https://open.spotify.com/artist/1voWj2pMS3ApzUroyIcHXM"
+                    }
                     target="_blank"
                     className="text-[#fff]"
                   >
@@ -115,7 +161,9 @@ function AlbumCover() {
                     )}
 
                     <Link
-                      to={albumInfo.external_urls.spotify}
+                      to={
+                        "https://open.spotify.com/artist/1voWj2pMS3ApzUroyIcHXM"
+                      }
                       target="_blank"
                       className="text-[#fff]"
                     >
@@ -155,7 +203,7 @@ function AlbumCover() {
 
           <div className="flex md:justify-center mt-[50px] ">
             <div className="flex flex-col gap-[16px] w-[100%] justify-center mx-auto px-[32px]">
-              {tracks.map((track, index) => (
+              {tracks?.map((track, index) => (
                 <div key={track.id} className="mb-2 flex justify-between">
                   <div className="max-w-[200px] text-[0.865rem]">
                     {track.name}
