@@ -19,9 +19,8 @@ function HeroSection({ scrollRef }) {
             Ebuka Songs
           </p>
           <p className="lg:text-[1.5rem] text-[1rem] font-[700] max-w-[700px] text-center px-[24px]">
-            Worship that <span className="goldAnimate">breaks yokes.</span> A
-            voice that stirs hunger for{" "}
-            <span className="goldAnimate">Jesus</span>.
+            Worship that <span>breaks yokes.</span> A voice that stirs hunger
+            for <span>Jesus</span>.
           </p>
 
           <button
