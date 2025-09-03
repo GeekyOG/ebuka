@@ -11,7 +11,7 @@ function AboutSection({ scrollRef }: { scrollRef?: any }) {
             About
             <span className="text-[#D2C1B6]"> Ebuka Blessed</span>
           </p>
-          <div className="flex flex-col gap-4 text-[0.895rem]">
+          <div className="flex flex-col gap-4 text-[0.895rem] mt-6">
             <p>Who Is Ebuka Songs?</p>
             <p>
               Ebuka Songs is a gospel music minister whose unique sound is

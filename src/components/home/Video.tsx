@@ -37,10 +37,7 @@ function Video() {
             </div>
 
             <div className="lg:max-w-[450px] flex flex-col justify-between lg:ml-[100px] py-[100px]">
-              <Link
-                to="https://www.youtube.com/@mercy_chinwo/videos"
-                target="_blank"
-              >
+              <Link to="https://www.youtube.com/@ebukasongs" target="_blank">
                 <button className="border-2 border-[#fff] text-[#fff] p-6">
                   See All Videos
                 </button>

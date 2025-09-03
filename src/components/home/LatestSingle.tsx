@@ -32,7 +32,7 @@ function LatestSingle({ scrollRef }) {
               <button className="btnGradient text-[#fff] mt-[20px]">
                 <Link
                   // to={latestSingleQuery?.data[0].link}
-                  to="https://linktr.ee/mercychinwoblessed"
+                  to="https://open.spotify.com/artist/1voWj2pMS3ApzUroyIcHXM"
                   target="_blank"
                   className="text-[#fff]"
                 >

@@ -66,7 +66,7 @@ function Update() {
       </Container>
       <div className="flex justify-center mt-[50px]">
         <Link
-          to="https://linktr.ee/mercychinwoblessed"
+          to="https://open.spotify.com/artist/1voWj2pMS3ApzUroyIcHXM"
           target="_blank"
           rel="noopener?"
         >
