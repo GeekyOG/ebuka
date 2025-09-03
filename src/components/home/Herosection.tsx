@@ -15,10 +15,10 @@ function HeroSection({ scrollRef }) {
     <div className=" bg-[url('/hero.png')] bg-no-repeat bg-cover bg-top">
       <div className="min-h-[100vh] flex justify-center items-center bg-[#0000007e]">
         <div className="flex flex-col items-center">
-          <p className="montserrat px-[24px] lg:text-[5rem] text-[3rem] goldAnimate leading-[100%] font-[900]">
+          <p className="montserrat lg:text-[5rem] text-[3rem] goldAnimate leading-[100%] font-[900]">
             Ebuka Songs
           </p>
-          <p className="lg:text-[1.5rem] text-[1rem] font-[700] max-w-[700px] text-center">
+          <p className="lg:text-[1.5rem] text-[1rem] font-[700] max-w-[700px] text-center px-[24px]">
             Worship that <span className="goldAnimate">breaks yokes.</span> A
             voice that stirs hunger for{" "}
             <span className="goldAnimate">Jesus</span>.
