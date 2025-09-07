@@ -39,8 +39,7 @@ function MobileNav({ activeNav }: { activeNav?: string }) {
   return (
     <div className="p-[20px]">
       <div className="flex justify-between items-center w-[100%]">
-        <img src="/logo.png" className=" h-[80px]" />
-
+        <img src="/logo.png" className="h-[50px]" />
         {/* <p className="text-[2rem] font-[700]">Ebuka Songs</p> */}
 
         <CiMenuFries
