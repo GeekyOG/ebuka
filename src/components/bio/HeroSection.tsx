@@ -15,7 +15,7 @@ function HeroSection({ scrollRef }) {
     <div className=" bg-[url('/hero.png')] bg-no-repeat bg-cover">
       <div className="min-h-[100vh] flex justify-center items-center bg-[#0000007e]">
         <div className="flex flex-col items-center">
-          <p className=" lg:text-[6rem] text-[3rem] goldAnimate leading-[100%] font-[700]">
+          <p className=" lg:text-[6rem] text-[3rem] goldAnimate  text-center leading-[100%] font-[700]">
             School Of The Spirit
           </p>
 
