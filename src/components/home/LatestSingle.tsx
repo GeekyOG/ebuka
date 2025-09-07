@@ -25,8 +25,8 @@ function LatestSingle({ scrollRef }) {
             />
 
             <div className="max-w-[450px] flex flex-col justify-between py-[100px] px-[24px]">
-              <p className="text-center text-[2.5rem] font-[700]">
-                Latest <span className="text-[#a2af9b]">Single</span>
+              <p className="text-center text-[2rem] font-[700]">
+                {latestSingleQuery?.data[0].title}
               </p>
               <p>{latestSingleQuery?.data[0].content}</p>
               <button className="btnGradient text-[#fff] mt-[20px]">
@@ -36,7 +36,7 @@ function LatestSingle({ scrollRef }) {
                   target="_blank"
                   className="text-[#fff]"
                 >
-                  Download/Stream: {latestSingleQuery?.data[0].title}
+                  Download/Stream
                 </Link>
               </button>
             </div>

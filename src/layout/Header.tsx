@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 
 export const navs = [
   { name: "Home", path: "/" },
-  { name: "Biography", path: "/biography" },
+  { name: "School Of The Spirit", path: "/biography" },
   // { name: "Discography", path: "/Discography" },
   { name: "Videos", path: "/videos" },
   { name: "Events / Ministration", path: "/tours" },
@@ -39,7 +39,8 @@ function Header() {
       </div>
       <Container className="xl:flex gap-[150px] items-center hidden">
         <Link to="/">
-          <p className="text-[2.25rem] font-[700] text-[#fff]">Ebuka Songs</p>
+          <img src="/logo.png" className=" h-[80px]" />
+          {/* <p className="text-[2.25rem] font-[700] text-[#fff]">Ebuka Songs</p> */}
         </Link>
 
         <div className="flex gap-[25px]">

@@ -10,7 +10,7 @@ import { IoArrowBackSharp } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 const NavOptions = [
   { name: "Home", path: "/" },
-  { name: "Biography", path: "/biography" },
+  { name: "School Of The Spirit", path: "/biography" },
   // { name: "Discography", path: "/Discography" },
   { name: "Videos", path: "/videos" },
   { name: "Events / Ministration", path: "/tours" },
@@ -39,7 +39,9 @@ function MobileNav({ activeNav }: { activeNav?: string }) {
   return (
     <div className="p-[20px]">
       <div className="flex justify-between items-center w-[100%]">
-        <p className="text-[2rem] font-[700]">Ebuka Songs</p>
+        <img src="/logo.png" className=" h-[80px]" />
+
+        {/* <p className="text-[2rem] font-[700]">Ebuka Songs</p> */}
 
         <CiMenuFries
           onClick={() => setShowMobileMenu(!showMobileMenu)}

@@ -20,7 +20,7 @@ function Footer() {
       <div>
         {/* <div className="h-[60px] border-[1px] w-[1px] mx-auto"></div> */}
 
-        <p className="text-[1.5rem] font-[900] goldAnimate">Ebuka</p>
+        <p className="text-[1.5rem] font-[900] goldAnimate">Pride of Heaven.</p>
       </div>
       <Container className="flex justify-center gap-6 lg:px-[150px] mt-[10px]">
         <Link
@@ -55,14 +55,14 @@ function Footer() {
       </Container>
 
       <p className="mt-[20px]">
-        © {year} Ebuka Ministry. All Rights Reserved. Designed by
-        <Link
+        © {year} Pride of Heaven. All rights reserved.
+        {/* <Link
           to="https://www.linkedin.com/in/onojuvwevwo-oghomena-984654207/"
           target="_blank"
         >
           {" "}
           GeekyOgee
-        </Link>
+        </Link> */}
         .
       </p>
     </div>

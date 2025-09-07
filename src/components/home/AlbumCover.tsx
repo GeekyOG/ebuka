@@ -138,7 +138,7 @@ function AlbumCover() {
                     target="_blank"
                     className="text-[#fff]"
                   >
-                    Buy/Stream Album
+                    Buy/Stream Now
                   </Link>
                 </button>
 

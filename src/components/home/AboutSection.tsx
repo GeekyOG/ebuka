@@ -31,7 +31,7 @@ function AboutSection({ scrollRef }: { scrollRef?: any }) {
           </div>
           {location.pathname !== "/biography" && (
             <Link to="/biography">
-              <button className="btnGradient w-[100%] rounded-[20px] max-w-[250px] mx-auto border-[2px] border-[#fff] mt-[20px] text-[#fff]">
+              <button className="btnGradient w-[100%] rounded-[20px] max-w-[250px] mx-auto border-[2px] border-red-600 mt-[20px] text-[#fff]">
                 Biography
               </button>
             </Link>

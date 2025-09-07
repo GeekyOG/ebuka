@@ -16,11 +16,11 @@ function HeroSection({ scrollRef }) {
       <div className="min-h-[100vh] flex justify-center items-center bg-[#0000007e]">
         <div className="flex flex-col items-center">
           <p className="montserrat lg:text-[5rem] text-[3rem] goldAnimate leading-[100%] font-[900]">
-            Ebuka Songs
+            Pride of Heaven
           </p>
           <p className="lg:text-[1.5rem] text-[1rem]  md:font-[700] max-w-[700px] text-center px-[24px]">
-            Worship that <span>breaks yokes.</span> A voice that stirs hunger
-            for <span>Jesus</span>.
+            A Jesus Tribe, Sponsored by the Spirit, One with God, and Great
+            Nation of Revivalists
           </p>
 
           <button

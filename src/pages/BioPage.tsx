@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import HeroSection from "../components/bio/HeroSection";
-import AboutSection from "../components/home/AboutSection";
 import Update from "../components/home/Update";
 import Awards from "../components/bio/Awards";
 import AwardsContent from "../components/bio/AwardsContent";
 import Gallery from "../components/home/Gallery";
+import AboutSection from "../components/home/AboutSchool";
 
 function BioPage() {
   useEffect(() => {

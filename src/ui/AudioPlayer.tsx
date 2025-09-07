@@ -70,7 +70,7 @@ const AudioPlayer = ({ img, tracks }: { img: string; tracks: any[] }) => {
         {/* Song Information */}
         <div className="text-center mb-4">
           <h3 className="text-lg font-semibold text-white">
-            {tracks[currentTrack].name}
+            {tracks[currentTrack]?.name}
           </h3>
           <p className="text-gray-400">Ebuka</p>
         </div>
@@ -97,7 +97,7 @@ const AudioPlayer = ({ img, tracks }: { img: string; tracks: any[] }) => {
             onClick={togglePlayPause}
           >
             <Link
-              to={tracks[currentTrack].external_urls.spotify}
+              to={tracks[currentTrack]?.external_urls.spotify}
               target="_blank"
             >
               {" "}
@@ -109,7 +109,7 @@ const AudioPlayer = ({ img, tracks }: { img: string; tracks: any[] }) => {
             className="text-white bg-transparent"
             // onClick={() => (audioRef.current.currentTime += 5)}
             onClick={() => {
-              if (currentTrack !== tracks.length - 1)
+              if (currentTrack !== tracks?.length - 1)
                 setCurrentTrack(currentTrack + 1);
             }}
           >
