@@ -44,7 +44,7 @@ function Footer() {
         </Link>
 
         <Link
-          to="https://www.youtube.com/Ebuka Songs Channel"
+          to="https://www.youtube.com/@ebukasongs/videos"
           target="_blank"
           className="text-[#fff]"
         >

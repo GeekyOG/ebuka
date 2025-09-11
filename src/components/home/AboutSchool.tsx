@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import JoinUsForm from "../bio/JoinUsForm";
 
 function AboutSection({ scrollRef }: { scrollRef?: any }) {
   const location = useLocation();
@@ -102,8 +103,7 @@ function AboutSection({ scrollRef }: { scrollRef?: any }) {
             </Link>
           )}
         </div>
-
-        <img src="/pride of heaven.webp" className="lg:max-w-[500px] mx-auto" />
+        <JoinUsForm />{" "}
       </div>
     </div>
   );

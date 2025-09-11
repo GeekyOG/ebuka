@@ -5,6 +5,7 @@ import Awards from "../components/bio/Awards";
 import AwardsContent from "../components/bio/AwardsContent";
 import Gallery from "../components/home/Gallery";
 import AboutSection from "../components/home/AboutSchool";
+import JoinUsForm from "../components/bio/JoinUsForm";
 
 function BioPage() {
   useEffect(() => {
@@ -17,7 +18,8 @@ function BioPage() {
     <div>
       <HeroSection scrollRef={scrollRef} />
       <AboutSection scrollRef={scrollRef} />
-      <Gallery />
+
+      {/* <Gallery /> */}
       {/* <Awards /> */}
       {/* <AwardsContent /> */}
       <Update />

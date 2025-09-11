@@ -28,13 +28,6 @@ function AboutSection({ scrollRef }: { scrollRef?: any }) {
               of worship and intimacy, of sound and surrender.
             </p>
           </div>
-          {location.pathname !== "/biography" && (
-            <Link to="/biography">
-              <button className="btnGradient w-[100%] rounded-[20px] max-w-[250px] mx-auto border-[2px] border-red-600 mt-[20px] text-[#fff]">
-                Biography
-              </button>
-            </Link>
-          )}
         </div>
 
         <img src="/pride of heaven.webp" className="lg:max-w-[500px] mx-auto" />
