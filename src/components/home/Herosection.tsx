@@ -1,7 +1,7 @@
 import React from "react";
 import { IoArrowDown } from "react-icons/io5";
 
-function HeroSection({ scrollRef }) {
+function HeroSection({ scrollRef }: { scrollRef: any }) {
   const scrollToLatestSingle = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollIntoView({
@@ -12,7 +12,7 @@ function HeroSection({ scrollRef }) {
   };
 
   return (
-    <div className=" bg-[url('/hero.png')] bg-no-repeat bg-cover bg-top">
+    <div className="bg-[url('/hero.webp')] bg-no-repeat bg-cover bg-top">
       <div className="min-h-[100vh] flex justify-center items-center bg-[#0000007e]">
         <div className="flex flex-col items-center">
           <p className="montserrat lg:text-[5rem] text-center text-[2.5rem] goldAnimate leading-[100%] font-[900]">

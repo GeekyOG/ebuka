@@ -1,7 +1,7 @@
 import React from "react";
 import { IoArrowDown } from "react-icons/io5";
 
-function HeroSection({ scrollRef }) {
+function HeroSection({ scrollRef }: { scrollRef: any }) {
   const scrollTo = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollIntoView({
@@ -12,7 +12,7 @@ function HeroSection({ scrollRef }) {
   };
 
   return (
-    <div className=" bg-[url('/hero.png')] bg-no-repeat bg-cover">
+    <div className="bg-[url('/school-of-the-spirit.webp')] bg-no-repeat bg-cover">
       <div className="min-h-[100vh] flex justify-center items-center bg-[#0000007e]">
         <div className="flex flex-col items-center">
           <p className=" lg:text-[6rem] text-[3rem] goldAnimate  text-center leading-[100%] font-[700]">

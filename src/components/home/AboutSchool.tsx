@@ -103,7 +103,7 @@ function AboutSection({ scrollRef }: { scrollRef?: any }) {
           )}
         </div>
 
-        <img src="/4.jpeg" className="lg:max-w-[500px] mx-auto" />
+        <img src="/pride of heaven.webp" className="lg:max-w-[500px] mx-auto" />
       </div>
     </div>
   );
